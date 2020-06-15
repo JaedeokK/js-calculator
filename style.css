@@ -1,0 +1,92 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.calculator {
+  padding: 20px;
+  height: 500px;
+  width: 300px;
+  background-color: #fbfbfd;
+  border-radius: 50px;
+  box-shadow: 20px 20px 20px 1px #c4c7d4, inset 0px 1px 10px -6px #c4c7d4,
+    inset 1px -3px 10px -6px #c4c7d4, inset -10px 0px 10px -15px #38393d,
+    inset 0px -10px 10px -15px #38393d, inset -5px 0px 10px 0px #ebeff0;
+}
+
+.screen {
+  box-sizing: border-box;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  justify-content: flex-end;
+  padding: 15px 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.calculator .result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.calculator .js-process {
+  font-size: 25px;
+  opacity: 0.8;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.calculator .js-result {
+  font-size: 45px;
+  padding: 10px 0px;
+}
+
+.calculator .cal__row {
+  display: flex;
+}
+
+.calculator button {
+  margin: 2px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  color: white;
+  outline: none;
+}
+.calculator button:hover {
+  opacity: 0.8;
+}
+
+.cal__row .btn-gray {
+  background-color: #a7aab1;
+  width: 100%;
+  height: 60px;
+}
+.cal__row .btn-dark {
+  background-color: #363439;
+}
+
+.cal__row .btn-orange {
+  background-color: #fe8e00;
+}
+
+.cal__row button.S {
+  width: 66px;
+  height: 60px;
+}
+.cal__row button.L {
+  width: 136px;
+  height: 60px;
+}
